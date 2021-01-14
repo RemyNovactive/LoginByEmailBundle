@@ -4,13 +4,13 @@ parameters:
 
 services:
     security.authentication.provider.dao:
-        class: %security.authentication.provider.dao.class%
+        class: '%security.authentication.provider.dao.class%'
         arguments:
             - ~ # User Provider
-            - @security.user_checker
+            - '@security.user_checker'
             - ~ # Provider-shared Key
-            - @security.encoder_factory
-            - %security.authentication.hide_user_not_found%
+            - '@security.encoder_factory'
+            - '%security.authentication.hide_user_not_found%'
         calls:
-            - [ setRepository, [ @ezpublish.api.repository ] ]
-            - [ setSession, [ @session ] ]
+            - [ setRepository, [ '@ezpublish.api.repository' ] ]
+            - [ setSession, [ '@session' ] ]

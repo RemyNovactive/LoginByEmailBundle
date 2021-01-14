@@ -10,6 +10,16 @@ This bundle enables users to login to eZ Publish using their email address in ad
 to their username (this functionality was removed from eZ Publish in version 5.3).
 To do so, we override eZ Publish's `UserProvider` and `AuthenticationProvider`.
 
+
+FORK
+----
+
+forked from eab-dev/LoginByEmailBundle
+
+*Why ?*
+
+To make it compatible with eZ 2.5
+
 Acknowledgements
 ----------------
 
